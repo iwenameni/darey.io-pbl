@@ -21,3 +21,9 @@ sudo mysql
 ![sudo-apt-install-mysql-server-1](https://user-images.githubusercontent.com/111616140/209611228-1499238e-95b2-4242-bd38-cc47a977d702.png)
 ![sudo-apt-install-mysql-server-2](https://user-images.githubusercontent.com/111616140/209611246-e5740e22-94aa-4037-97b7-9b9c875ca548.png)
 ![sudo-mysql](https://user-images.githubusercontent.com/111616140/209611264-77e30767-a8ff-4ce9-8b85-44400ac7c762.jpg)
+##Step 3: Installing php
+
+Commands:
+
+sudo apt install php-fpm php-mysql
+![Installing-php](https://user-images.githubusercontent.com/111616140/209612120-d99976f9-1f6a-4c2b-b69f-63cc8e6ede28.jpg)
