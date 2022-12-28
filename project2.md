@@ -46,3 +46,12 @@ sudo unlink /etc/nginx/sites-enabled/default
 sudo systemctl reload nginx
 ![Configuring-Nginx](https://user-images.githubusercontent.com/111616140/209766306-da1f6485-cf7a-4aba-ab08-5cedcd7618eb.jpg)
 ![Website-test](https://user-images.githubusercontent.com/111616140/209766455-7cfdc9a2-01d5-4e3e-b57f-ab1dd99299db.jpg)
+## Step 5: Testing PHP with Nginx
+
+Commands:
+
+sudo nano /var/www/projectLEMP/info.php
+
+I tested my php website using: http://`server_domain_or_IP`/info.php
+![testing-php-with-nginx1](https://user-images.githubusercontent.com/111616140/209767962-46fddf73-c2c2-45f2-a6b1-0beaecfcea69.jpg)
+![testing-php-with-nginx2](https://user-images.githubusercontent.com/111616140/209767973-33c3a219-1100-450d-8d93-b5107703d280.jpg)
