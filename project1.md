@@ -40,3 +40,49 @@ sudo mysql_secure_installation
 sudo mysql -p
 
 ![password login on MySQL](https://user-images.githubusercontent.com/111616140/209892022-7e31f093-375a-4d0b-bf11-fc9e102c2ee5.png)
+
+## Step 3: Installing PHP
+
+Commands:
+
+sudo apt install php libapache2-mod-php php-mysql
+
+php -v
+
+![installing-php](https://user-images.githubusercontent.com/111616140/209892510-9fb90e3a-e5a2-42fa-93dd-fe1b2c682dd2.jpg)
+
+##Step 4: Creating a virtual host for my website using Apache
+
+Commands:
+
+sudo mkdir /var/www/projectlamp
+
+sudo chown -R $USER:$USER /var/www/projectlamp
+
+sudo vi /etc/apache2/sites-available/projectlamp.conf
+
+sudo ls /etc/apache2/sites-available
+
+sudo a2ensite projectlamp
+
+sudo a2dissite 000-default
+
+sudo apache2ctl configtest
+
+sudo systemctl reload apache2
+
+![creating-a-virtual-host-for-my-website](https://user-images.githubusercontent.com/111616140/209893157-adbe1aeb-43b7-4b87-9060-69673159d0c9.jpg)
+
+## Step 5: Enable PHP on the website
+
+sudo vim /etc/apache2/mods-enabled/dir.conf
+
+sudo systemctl reload apache2
+
+vim /var/www/projectlamp/index.php
+
+sudo rm /var/www/projectlamp/index.php
+
+![enabling-php-on-my-website](https://user-images.githubusercontent.com/111616140/209893180-00a6b807-5cc8-45b6-9d96-b445c3290fc5.jpg)
+
+![testing-my-php-installation-environment](https://user-images.githubusercontent.com/111616140/209893186-dd2247d7-e53e-4c10-ad1b-5a32672219c5.jpg)
