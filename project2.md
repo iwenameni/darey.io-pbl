@@ -21,7 +21,7 @@ sudo mysql
 ![sudo-apt-install-mysql-server-1](https://user-images.githubusercontent.com/111616140/209611228-1499238e-95b2-4242-bd38-cc47a977d702.png)
 ![sudo-apt-install-mysql-server-2](https://user-images.githubusercontent.com/111616140/209611246-e5740e22-94aa-4037-97b7-9b9c875ca548.png)
 ![sudo-mysql](https://user-images.githubusercontent.com/111616140/209611264-77e30767-a8ff-4ce9-8b85-44400ac7c762.jpg)
-##Step 3: Installing php
+## Step 3: Installing php
 
 Commands:
 
@@ -45,7 +45,7 @@ sudo unlink /etc/nginx/sites-enabled/default
 
 sudo systemctl reload nginx
 ![Configuring-Nginx](https://user-images.githubusercontent.com/111616140/209766306-da1f6485-cf7a-4aba-ab08-5cedcd7618eb.jpg)
-![Website-test](https://user-images.githubusercontent.com/111616140/209766455-7cfdc9a2-01d5-4e3e-b57f-ab1dd99299db.jpg)
+![website-test1](https://user-images.githubusercontent.com/111616140/210191478-8afdecaf-b080-4a64-be01-9d7a2c7bc271.jpg)
 ## Step 5: Testing PHP with Nginx
 
 Commands:
