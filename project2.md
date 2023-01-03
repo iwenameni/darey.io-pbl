@@ -55,3 +55,40 @@ sudo nano /var/www/projectLEMP/info.php
 I tested my php website using: http://`server_domain_or_IP`/info.php
 ![testing-php-with-nginx1](https://user-images.githubusercontent.com/111616140/209767962-46fddf73-c2c2-45f2-a6b1-0beaecfcea69.jpg)
 ![testing-php-with-nginx2](https://user-images.githubusercontent.com/111616140/209767973-33c3a219-1100-450d-8d93-b5107703d280.jpg)
+## Step 6: Retrieving Data from mysql Data base with PHP
+
+Commands:
+
+sudo mysql
+
+mysql> CREATE DATABASE `example_database`;
+
+mysql>  CREATE USER 'example_user'@'%' IDENTIFIED WITH mysql_native_password BY 'password';
+
+mysql> GRANT ALL ON example_database.* TO 'example_user'@'%';
+
+mysql -u example_user -p
+
+mysql> SHOW DATABASES;
+
+CREATE TABLE example_database.todo_list (
+
+item_id INT AUTO_INCREMENT,
+
+content VARCHAR(255),
+
+PRIMARY KEY(item_id)
+
+);
+
+mysql> INSERT INTO example_database.todo_list (content) VALUES ("My first important item");
+
+mysql>  SELECT * FROM example_database.todo_list;
+
+nano /var/www/projectLEMP/todo_list.php
+
+http://<Public_domain_or_IP>/todo_list.php
+
+![retrieving-data-from-mysql-database-1](https://user-images.githubusercontent.com/111616140/210290478-00fc25a4-9000-404d-9b85-3b35ca6dabb2.jpg)
+![retrieving-data-from-mysql-database-2](https://user-images.githubusercontent.com/111616140/210290486-4b3bfc85-dab6-4fe8-95ad-8ca24fe82bdb.jpg)
+![testing-my-php-environment](https://user-images.githubusercontent.com/111616140/210290501-7db7eb15-1ce6-4db3-be31-a8443ef4661e.jpg)
