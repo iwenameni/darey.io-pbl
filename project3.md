@@ -1,6 +1,8 @@
 # PROJECT 3: MERN STACK IMPLEMENTATION
 
-Step 1: Backend configuration
+## Step 1: Backend configuration
+
+### Installing nodejs
 
 Commands:
 
@@ -32,3 +34,4 @@ ls
 ![backend-configuration4](https://user-images.githubusercontent.com/111616140/210492114-a8cceb90-2f09-4c36-aba1-26ae61fc07c3.jpg)
 ![backend-configuration5](https://user-images.githubusercontent.com/111616140/210492138-ee454a7e-58fd-4fa7-b05e-6a0548357b7c.jpg)
 
+### Installing expressjs
