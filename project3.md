@@ -68,3 +68,23 @@ vim api.js
 
 ![installing-expreesjs2](https://user-images.githubusercontent.com/111616140/211180427-ca480e2f-6c16-4d0e-bbd1-147815228785.jpg)
 
+### Models
+
+npm install mongoose
+
+mkdir models
+
+cd models
+
+touch todo.js
+
+vim todo.js
+
+cd ~
+
+cd routes
+
+vim api.js
+
+![models](https://user-images.githubusercontent.com/111616140/211181207-aea8a5dc-cb33-4bc4-96e2-d4b8c9ca1638.jpg)
+
