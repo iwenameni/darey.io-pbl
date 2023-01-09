@@ -70,6 +70,8 @@ vim api.js
 
 ### Models
 
+Commands
+
 npm install mongoose
 
 mkdir models
@@ -87,4 +89,22 @@ cd routes
 vim api.js
 
 ![models](https://user-images.githubusercontent.com/111616140/211181207-aea8a5dc-cb33-4bc4-96e2-d4b8c9ca1638.jpg)
+
+### MongoDB database
+
+We set up our MongDB account and created a cluster
+
+Commands:
+
+touch .env
+
+vi .env
+
+vim index.js
+
+![MongoDB-1](https://user-images.githubusercontent.com/111616140/211236673-bf725691-1779-4a8a-b403-cfd23bf27ad0.jpg)
+
+
+node index.js
+
 
