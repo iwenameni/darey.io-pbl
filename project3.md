@@ -107,4 +107,23 @@ vim index.js
 
 node index.js
 
+![testing-backend-from-terminal](https://user-images.githubusercontent.com/111616140/213346315-322a9cce-ec98-4d3d-8754-2e7d01a88720.jpg)
+
+Next, I install postman to help test and share my APIs to successfully complete my backend creation. I then test it by executing  POST and GET requests.
+
+![post-request-on-postman](https://user-images.githubusercontent.com/111616140/213347306-f1a82fde-d397-4384-b8b4-054cbf814766.jpg)
+
+![get-request-on-postman](https://user-images.githubusercontent.com/111616140/213347344-f7539422-525b-46d9-a5e6-ff380d4cd8ce.jpg)
+
+## Step 2: Frontend Creation
+
+Commands:
+
+npx create-react-app client
+
+We then install some dependencies as well;
+
+npm install concurrently --save-dev
+
+npm install nodemon --save-dev
 
