@@ -127,3 +127,53 @@ npm install concurrently --save-dev
 
 npm install nodemon --save-dev
 
+cd client
+
+vi package.json
+
+We then open port 5000 to be able to access the application directly from the browser
+
+npm run dev
+
+cd client
+
+cd src
+
+mkdir components
+
+cd components
+
+touch Input.js ListTodo.js Todo.js
+
+vi Input.js
+
+We replace the default script with that provided in the dcoumentation
+
+cd ../..
+
+npm install axios
+
+cd src/components
+
+vi ListTodo.js
+
+We replace the default script with that provided in the dcoumentation
+
+vi Todo.js
+
+We replace the default script with that provided in the dcoumentation
+
+cd ..
+
+vi App.js
+
+We replace the default script with that provided in the dcoumentation
+
+vi App.css
+
+vim index.css
+
+cd ../..
+
+npm run dev
+
