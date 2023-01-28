@@ -194,3 +194,5 @@ npm run dev
 ![front-end-creation-8](https://user-images.githubusercontent.com/111616140/215237144-8e4347a4-1112-4c0c-bcb0-9fd293a9b176.jpg)
 
 ![front-end-creation-9](https://user-images.githubusercontent.com/111616140/215237152-e3c91e21-b8f7-4f94-bca5-f853c35127e4.jpg)
+
+![testing-front-end-on-browser](https://user-images.githubusercontent.com/111616140/215238429-214dd85f-7fe8-4e79-a503-a59d82dc4f60.jpg)
