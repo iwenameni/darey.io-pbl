@@ -104,4 +104,5 @@ node server.js
 curl -s http://localhost:3300
 
 ![accessing-the-routes-with-AngularJs](https://user-images.githubusercontent.com/111616140/221385309-52cb5fa4-8edc-46a3-b326-6667750e18f1.jpg)
+![access-book-register-from-web](https://user-images.githubusercontent.com/111616140/224818682-6859a0a2-09c6-4147-8480-0c54cf0c0876.jpg)
 
