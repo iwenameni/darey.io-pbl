@@ -44,6 +44,15 @@ sudo vi /etc/mysql/mysql.conf.d/mysqld.cnf
 
 sudo systemctl restart mysql
 
+![server-config1](https://user-images.githubusercontent.com/111616140/231011209-808e5967-c940-4050-a25a-291944461a0f.jpg)
+
+![server-config2](https://user-images.githubusercontent.com/111616140/231011223-74da2c8d-d3a6-4fb9-b7a3-b108500ab649.jpg)
+
+![server-config3](https://user-images.githubusercontent.com/111616140/231011233-f31cb294-13d8-4d4e-82a8-d0a1d7873740.jpg)
+
+![server-config4](https://user-images.githubusercontent.com/111616140/231011245-d9e538c4-5770-48c7-b76b-b83e5957f18f.jpg)
+
+![server-config5](https://user-images.githubusercontent.com/111616140/231011261-f797480d-af4b-4ff0-8a07-7c6bc0712be3.jpg)
 
 
 We have successfully set up mysql on sevrer 
@@ -55,3 +64,5 @@ sudo mysql -u remote_user -h 172.31.48.247 -p
 We try to run some basic mysql commands;
 
 Show databases;
+
+![connecting-to-server-via-client-instance](https://user-images.githubusercontent.com/111616140/231011288-c1e4284c-bc8e-4141-b993-77a016346230.jpg)
