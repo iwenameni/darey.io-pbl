@@ -1,6 +1,6 @@
 PROJECT 5: IMPLEMENT A CLIENT SERVER ARCHITECTURE USING MYSQL DATABASE MANAGEMENT SYSTEM (DBMS).
 
-Firstly we Created and configured two Linux-based virtual servers (EC2 instances in AWS).
+Firstly we created and configured two Linux-based virtual servers (EC2 instances in AWS).
 
 Server A name - `mysql server`
 
