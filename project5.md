@@ -32,7 +32,7 @@ sudo mysql_secure_installation
 
 mysql -u root -p
 
-CREATE USER 'remote_user'@'%' IDENTIFIED WITH mysql_native_password BY 'Bigboy2zones@';
+CREATE USER 'remote_user'@'%' IDENTIFIED WITH mysql_native_password BY 'password';
 
 CREATE DATABASE test_db
 
@@ -55,9 +55,9 @@ sudo systemctl restart mysql
 ![server-config5](https://user-images.githubusercontent.com/111616140/231011261-f797480d-af4b-4ff0-8a07-7c6bc0712be3.jpg)
 
 
-We have successfully set up mysql on sevrer 
+Having successfully set up mysql on sevrer, 
 
-We then try to connect remotely to the mysql server via the client instance
+we then try to connect remotely to the mysql server via the client instance
 
 sudo mysql -u remote_user -h 172.31.48.247 -p
 
