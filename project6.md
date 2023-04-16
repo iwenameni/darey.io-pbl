@@ -101,3 +101,61 @@ df -h
 ![webserver-config12](https://user-images.githubusercontent.com/111616140/232260722-8233d165-5af6-489b-bc27-218dc1c23a4e.jpg)
 
 ![webserver-config13](https://user-images.githubusercontent.com/111616140/232260727-6d780822-6eea-4900-9261-99f88122f896.jpg)
+
+## PREPARING THE DATABASE SERVER
+
+lsblk
+
+sudo gdisk /dev/xvdf
+
+sudo gdisk /dev/xvdg
+
+sudo gdisk /dev/xvdh
+
+sudo yum install lvm2
+
+sudo lvmdiskscan
+
+sudo pvcreate /dev/xvdf1 /dev/xvdg1 /dev/xvdh1
+
+sudo pvs
+
+sudo vgcreate vg-database /dev/xvdf1 /dev/xvdg1 /dev/xvdh1
+
+sudo vgs
+
+sudo lvcreate -n db-lv -L 20G vg-database
+
+sudo lvs
+
+sudo mkdir /db
+
+sudo mkfs.ext4 /dev/vg-database/db-lv
+
+sudo mount /dev/vg-database/db-lv /db
+
+df -h
+
+sudo blkid
+
+sudo vi /etc/fstab
+
+sudo mount -a
+
+sudo systemctl daemond-reload
+
+df -h
+
+![db-config1](https://user-images.githubusercontent.com/111616140/232348911-dcb6f26d-0ea3-41d1-97f5-b17780c4054f.jpg)
+
+![db-config2](https://user-images.githubusercontent.com/111616140/232348920-ecfc93e9-6bef-4e1f-bb35-438510cb8081.jpg)
+
+![db-config3](https://user-images.githubusercontent.com/111616140/232348928-ac584486-c922-4106-94d7-85e677b3bdba.jpg)
+
+![db-config4](https://user-images.githubusercontent.com/111616140/232348932-2d509364-7820-475b-9ff4-3933491bfa42.jpg)
+
+![db-config5](https://user-images.githubusercontent.com/111616140/232348934-612e615c-a30f-473d-ae93-344d3c8e6087.jpg)
+
+![db-config6](https://user-images.githubusercontent.com/111616140/232348939-85dba2e3-4196-403d-b766-17b8d08bd8a3.jpg)
+
+![db-config7](https://user-images.githubusercontent.com/111616140/232348941-a0495605-5a53-44c1-88d8-b02b992c670b.jpg)
