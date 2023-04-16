@@ -1,4 +1,4 @@
-PROJECT 6: WEB SOLUTION WITH WORDPRESS
+# PROJECT 6: WEB SOLUTION WITH WORDPRESS
 
 In this project I will prepare a storage infrastructure on two Linux servers and implement a basic web solution using WordPress
 
@@ -8,7 +8,7 @@ This project will consist of 2 parts;
 
 2. Install WordPress and connect it to a remote MySQL database server.
 
-Step 1: PREPARING THE WEB SERVER
+## Step 1: PREPARING THE WEB SERVER
 
 We start by launching an instance that will serve as web server, then create 3 volumes (10 GiB) each and attache them to the web server.
 
