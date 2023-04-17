@@ -195,4 +195,3 @@ sudo systemctl start httpd
 Restart Apache
 
 sudo systemctl restart httpd
-
