@@ -102,7 +102,7 @@ df -h
 
 ![webserver-config13](https://user-images.githubusercontent.com/111616140/232260727-6d780822-6eea-4900-9261-99f88122f896.jpg)
 
-## PREPARING THE DATABASE SERVER
+## STEP 2: PREPARING THE DATABASE SERVER
 
 lsblk
 
@@ -159,3 +159,40 @@ df -h
 ![db-config6](https://user-images.githubusercontent.com/111616140/232348939-85dba2e3-4196-403d-b766-17b8d08bd8a3.jpg)
 
 ![db-config7](https://user-images.githubusercontent.com/111616140/232348941-a0495605-5a53-44c1-88d8-b02b992c670b.jpg)
+
+## Step 3 — Install WordPress on your Web Server EC2
+
+Update the repository
+
+sudo yum -y update
+
+Start Apache
+
+sudo systemctl enable httpd
+
+To install PHP and it’s depemdencies
+
+sudo yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+
+sudo yum install yum-utils http://rpms.remirepo.net/enterprise/remi-release-8.rpm
+
+sudo yum module list php
+
+sudo yum module reset php
+
+sudo yum module enable php:remi-7.4
+
+sudo yum install php php-opcache php-gd php-curl php-mysqlnd
+
+sudo systemctl start php-fpm
+
+sudo systemctl enable php-fpm
+
+setsebool -P httpd_execmem 1
+
+sudo systemctl start httpd
+
+Restart Apache
+
+sudo systemctl restart httpd
+
