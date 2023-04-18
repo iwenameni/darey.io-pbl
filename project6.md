@@ -195,3 +195,19 @@ sudo systemctl start httpd
 Restart Apache
 
 sudo systemctl restart httpd
+
+mkdir wordpress
+
+cd   wordpress
+
+sudo wget http://wordpress.org/latest.tar.gz
+  
+sudo tar xzvf latest.tar.gz
+  
+sudo cp -R wp-config-sample.php wp-config.php
+
+cp R wordpress/. /var/www/html/
+
+cd /var/www/html
+
+sudo yum install mysql-server
