@@ -211,3 +211,38 @@ cp R wordpress/. /var/www/html/
 cd /var/www/html
 
 sudo yum install mysql-server
+
+sudo chown -R apache:apache /var/www/html/wordpress
+
+sudo chcon -t httpd_sys_rw_content_t /var/www/html/wordpress -R
+  
+sudo setsebool -P httpd_can_network_connect=1
+
+sudo mv /etc/httpd/conf.d/welcome.conf /etc/httpd/conf.d/welcome.conf_backup
+
+## Step 4 — Install MySQL on your DB Server EC2
+
+sudo yum update
+
+sudo yum install mysql-server
+
+Verify that the service is up and running by using sudo systemctl status mysqld, if it is not running, restart the service and enable it so it will be running even after reboot:
+
+sudo systemctl restart mysqld
+
+sudo systemctl enable mysqld
+
+## Step 5 — Configure DB to work with WordPress
+sudo mysql
+
+CREATE DATABASE wordpress;
+
+CREATE USER `myuser`@`<Web-Server-Private-IP-Address>` IDENTIFIED BY 'mypass';
+
+GRANT ALL ON wordpress.* TO 'myuser'@'<Web-Server-Private-IP-Address>';
+  
+FLUSH PRIVILEGES;
+  
+SHOW DATABASES;
+  
+exit
