@@ -363,9 +363,18 @@ exit
 
 ![step5-3](https://user-images.githubusercontent.com/111616140/232935053-daf2f836-f8e5-4c6b-a158-aba0d85f2599.jpg)
 
-
- Step 6 — Configure WordPress to connect to remote database/Testing the configurations 
+## Step 6 — Configure WordPress to connect to remote database/Testing the configurations 
   
+  We make all neccessary configurations to enable word press connect to our remote database
+  
+We open MySQL port 3306 on the DB Server EC2. For extra security, we allow access to the DB server ONLY from our Web Server’s IP address, so in the Inbound Rule configuration we specify source as /32
+ 
+ Install MySQL client and test that we can connect from our Web Server to the DB server by using mysql-client
+  
+sudo yum install mysql
+
+sudo mysql -u admin -p -h <DB-Server-Private-IP-address>
+
 ![testing-the-webconfig](https://user-images.githubusercontent.com/111616140/232939438-27d2df73-44a9-4cb5-a88c-37910ebb3918.jpg)
 
 ![testing-the-webconfig2](https://user-images.githubusercontent.com/111616140/232940878-5acbd5ef-9492-4ab7-96c4-9e7f501c2201.jpg)
