@@ -139,3 +139,13 @@ sudo systemctl start php-fpm
 sudo systemctl enable php-fpm
 
 setsebool -P httpd_execmem 1
+ 
+ls /var/www
+ 
+ls /var/log
+ 
+sudo ls /var/log/httpd
+ 
+sudo mount -t nfs -o rw,nosuid 172.31.88.122:/mnt/logs /var/log/httpd
+ 
+sudo vi /etc/fstab
