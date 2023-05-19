@@ -149,3 +149,37 @@ sudo ls /var/log/httpd
 sudo mount -t nfs -o rw,nosuid 172.31.88.122:/mnt/logs /var/log/httpd
  
 sudo vi /etc/fstab
+ 
+sudo yum install git
+ 
+git init
+
+We then fork  the tooling source code from Darey.io Github Account to my Github account:
+ 
+git clone https://github.com/darey-io/tooling.git
+ 
+cd tooling/
+ 
+sudo cp -R html/. /var/www/html
+ 
+ls /var/www/html
+
+ls html
+ 
+sudo setenforce 0
+ 
+sudo vi /etc/sysconfig/selinux
+ 
+sudo systemctl start httpd
+ 
+ sudo systemctl status httpd
+ 
+ sudo vi /var/www/html/functions.php
+ 
+ cd tooling
+ 
+ sudo yum install mysql -y
+ 
+ myqsl -h 172.31.83.103 -u webaccess -p tooling < tooling-db.sql
+                                                                
+ We repeat these steps for the other 2 webservers (WEBSERVER 2 and 3)                                                           
