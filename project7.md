@@ -129,6 +129,17 @@ flush privileges;
 
 show databases;
 
+![step2-1](https://github.com/iwenameni/darey.io-pbl/assets/111616140/fbe3023e-c9eb-4588-82fa-843797b962ad)
+![step2-2](https://github.com/iwenameni/darey.io-pbl/assets/111616140/5205f414-276e-4ae8-b577-5a59ed2e8896)
+![step2-3](https://github.com/iwenameni/darey.io-pbl/assets/111616140/db744c1d-2254-4b2a-95a9-6b8e79b09379)
+![step2-4](https://github.com/iwenameni/darey.io-pbl/assets/111616140/4136125a-2d18-4c4a-ac8a-0900d77fcf36)
+![step2-5](https://github.com/iwenameni/darey.io-pbl/assets/111616140/37d5c6cd-5804-4fdf-84b3-39369ac03e77)
+![step2-6](https://github.com/iwenameni/darey.io-pbl/assets/111616140/4e0b26de-a317-41b5-87f0-28128ad1b248)
+![step2-7](https://github.com/iwenameni/darey.io-pbl/assets/111616140/10044aef-5556-487a-b61f-37108d36cb17)
+![step2-8](https://github.com/iwenameni/darey.io-pbl/assets/111616140/bad3c5a3-53b7-4518-887d-102ac08cdf5b)
+![step2-9](https://github.com/iwenameni/darey.io-pbl/assets/111616140/605f010a-1c62-4cf3-b0bb-912d5e8da514)
+
+
 ## Step 3 — Prepare the Web Servers
 
 sudo yum install nfs-utils nfs4-acl-tools -y
