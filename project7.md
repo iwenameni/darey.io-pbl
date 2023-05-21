@@ -168,7 +168,9 @@ sudo systemctl start php-fpm
 
 sudo systemctl enable php-fpm
 
-setsebool -P httpd_execmem 1
+setsebool -P httpd_execmem
+ 
+We repeat these steps for the other 2 webservers (WEBSERVER 2 and 3)
  
 ls /var/www
  
@@ -202,19 +204,19 @@ sudo vi /etc/sysconfig/selinux
  
 sudo systemctl start httpd
  
- sudo systemctl status httpd
+sudo systemctl status httpd
  
- sudo vi /var/www/html/functions.php
+sudo vi /var/www/html/functions.php
  
- cd tooling
+cd tooling
  
- sudo yum install mysql -y
+sudo yum install mysql -y
  
- myqsl -h 172.31.83.103 -u webaccess -p tooling < tooling-db.sql
+myqsl -h 172.31.83.103 -u webaccess -p tooling < tooling-db.sql
                                                                 
- We repeat these steps for the other 2 webservers (WEBSERVER 2 and 3)                                                           
+We repeat these steps for the other 2 webservers (WEBSERVER 2 and 3)                                                           
 
- ![step3-1](https://github.com/iwenameni/darey.io-pbl/assets/111616140/66a231bc-f505-4e06-94ad-1deba979ca46)
+![step3-1](https://github.com/iwenameni/darey.io-pbl/assets/111616140/66a231bc-f505-4e06-94ad-1deba979ca46)
 ![step3-2](https://github.com/iwenameni/darey.io-pbl/assets/111616140/c1ed9132-11a6-4809-a544-d6f09eaa803f)
 ![step3-3](https://github.com/iwenameni/darey.io-pbl/assets/111616140/931cdfa5-064b-4575-aeaa-f5d4b19ae482)
 ![step3-4](https://github.com/iwenameni/darey.io-pbl/assets/111616140/b3218ebc-192d-4195-a932-0e2db142fbd1)
@@ -235,5 +237,9 @@ sudo systemctl start httpd
 ![step3-19](https://github.com/iwenameni/darey.io-pbl/assets/111616140/2aba3743-d032-42de-b859-22c671c84fb8)
 ![step3-20](https://github.com/iwenameni/darey.io-pbl/assets/111616140/9b3edbb1-fe5a-4542-9d54-d67972da0d35)
 ![step3-21](https://github.com/iwenameni/darey.io-pbl/assets/111616140/3efca016-5380-461a-aa0f-406278e431e6)
+                                                               
+We can now see if we can access the website via the private IP address of the webservers
+
 ![testing-the-website](https://github.com/iwenameni/darey.io-pbl/assets/111616140/d1fd5cfc-bf96-4f5f-bb00-9606de172cfc)
+
 ![website-testing](https://github.com/iwenameni/darey.io-pbl/assets/111616140/e63c3b8b-c710-457f-b680-eb9adf27a9a2)
